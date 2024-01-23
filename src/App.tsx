@@ -1,13 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Title from "./Title";
 
-function title() {
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  );
+export default function App() {
+  return <Title />;
 }
-
-export default title;
