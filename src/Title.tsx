@@ -1,10 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./App.css";
-export default function Title() {
-  return (
-    <div className="App ">
-      <h1>Hello</h1>
-      <button>Click me</button>
-    </div>
-  );
-}
+const Title = (): ReactElement => (
+  <div className="App">
+    <h1>Hello</h1>
+    <button>CLICK ME</button>
+  </div>
+);
+export default Title;
