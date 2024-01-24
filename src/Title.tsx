@@ -13,8 +13,3 @@ const Title = (): ReactElement => {
 };
 
 export default Title;
-
-// {/* <div className="App">
-//     <h1>Hello</h1>
-//     <button onClick={}>CLICK ME</button>
-//   </div> */}
