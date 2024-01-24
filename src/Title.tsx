@@ -4,13 +4,10 @@ import "./App.css";
 const Title = (): ReactElement => {
   const [isVisible, setIsVisible] = useState(true);
 
-  const buttonClick = () => {
-    setIsVisible(!isVisible);
-  };
   return (
     <div className="App">
       {isVisible && <h1>Hello</h1>}
-      <button onClick={buttonClick}>Click Me</button>
+      <button onClick={() => setIsVisible(!isVisible)}>Click Me</button>
     </div>
   );
 };
