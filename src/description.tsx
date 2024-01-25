@@ -1,14 +1,10 @@
-import React, { ReactElement } from "react";
+import React, { FC, ReactElement } from "react";
 
-const Description = ({
-  description,
-}: {
-  description: string;
-}): ReactElement => {
-  return (
-    <div>
-      <p>{description}</p>
-    </div>
-  );
+type DescriptionProps = {
+  value: string;
+};
+
+const Description: FC<DescriptionProps> = ({ value }): ReactElement => {
+  return <p>{value}</p>;
 };
 export default Description;
