@@ -5,7 +5,7 @@ import Description from "./description";
 const Title = (): ReactElement => {
   const [isVisible, setIsVisible] = useState<boolean>(true);
   const title: string = "hello";
-  const description = "world";
+  const description: string = "world";
   return (
     <div className="App">
       {isVisible && <h1>{title}</h1>}
