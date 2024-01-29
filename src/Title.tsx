@@ -5,11 +5,11 @@ import Description from "./description";
 const Title = (): ReactElement => {
   const [isVisible, setIsVisible] = useState<boolean>(true);
   const title: string = "hello";
-  const description: string = "world";
+  const subTitle:string= "world";
   return (
     <div className="App">
       {isVisible && <h1>{title}</h1>}
-      <h2>{description}</h2>
+      <Description value={subTitle}/>
       <button onClick={() => setIsVisible(!isVisible)}>Click Me</button>
     </div>
   );
